@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Дильмухамедова Залина</title>
+</head>
+<body>
+    <script>
+        try {
+            var lang = prompt("Введите язык (ru, en, fr или de):");
+            var language;
+
+            if (lang === "ru") {
+                language = "русский";
+            } else if (lang === "en") {
+                language = "английский";
+            } else if (lang === "fr") {
+                language = "французский";
+            } else if (lang === "de") {
+                language = "немецкий";
+            } else {
+                throw new Error("Язык неизвестен");
+            }
+
+            alert("Полное название языка: " + language);
+        } catch (error) {
+            alert(error.message);
+        }
+    </script>
+
+    <hr>
+    <h3>Информация о разработчике:</h3>
+    <p>Разработчик: [Дильмухамедова Залина]</p>
+</body>
+</html>
